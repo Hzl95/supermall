@@ -1,7 +1,6 @@
 <template>
-    <div class="wrapper">
-      <ul class="content">
-      <button @click="btnclick">按钮</button>
+      <scroll class="content">
+        <ul>
       <li>分类列表1</li>
       <li>分类列表2</li>
       <li>分类列表3</li>
@@ -102,40 +101,29 @@
       <li>分类列表98</li>
       <li>分类列表99</li>
       <li>分类列表100</li>
-    </ul>
-    </div>
+        </ul>
+      </scroll>
 </template>
 
 <script>
-import BScroll from 'better-scroll'
+import Scroll from 'components/common/scroll/Scroll.vue'
 export default {
+  components: { Scroll },
   data(){
     return {
       scroll:null
     }
   },
   mounted(){
-    this.scroll=new BScroll('.wrapper',{
-      probeType:3,
-      pullUpLoad:true
-    })
-    this.scroll.on('scroll',(position)=>{
-      console.log(position);
-    })
-    this.scroll.on('pullingUp',()=>{
-      console.log('上拉加载更多');
-    })
   },
   methods:{
-    btnclick(){
-      console.log(111);
-    }
+
   }
 }
 </script>
 
 <style scoped>
-  .wrapper{
+  .content{
     height: 150px;
     background-color: red;
     overflow: hidden;

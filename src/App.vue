@@ -1,10 +1,11 @@
 <template>
-  <div id="app">
-    <keep-alive>
+  <div id="app"
+       class="wrapper">
+    <keep-alive exclude="Detail">
       <!-- 让Home不要随意销毁掉 -->
-      <router-view/>
+      <router-view />
     </keep-alive>
-    <main-tab-bar/>
+    <main-tab-bar />
   </div>
 </template>
 
@@ -19,5 +20,5 @@ export default {
 </script>
 
 <style>
-  @import "assets/css/base.css";
+@import "assets/css/base.css";
 </style>
