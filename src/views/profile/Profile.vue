@@ -117,8 +117,8 @@ export default {
 
 <style scoped>
   .content{
-    height: 300px;
-    background-color: red;
+    height: 200px;
+    background-color: pink;
     overflow: hidden;
   }
 </style>

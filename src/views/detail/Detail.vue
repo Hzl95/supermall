@@ -195,11 +195,11 @@ export default {
     background-color: #fff;
     height: 100vh;
   }
-  .detail-nav{
+  /* .detail-nav{
     position: relative;
     z-index: 9;
     background-color: #fff;
-  }
+  } */
   .content{
     /* height: 300px; */
     overflow: hidden;
